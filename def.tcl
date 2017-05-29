@@ -41,7 +41,6 @@ proc def { name closedvars lambda } {
         set body [lindex $lambda 1]
     }
 
-
     oo::class create ::$name [defbody $closedvars $args $body]
 }
 
